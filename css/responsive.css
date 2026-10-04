@@ -1,0 +1,303 @@
+/* ============================================================
+   NIDHI SHARMA | RESPONSIVE DESIGN STYLES
+   Flawless layout across Desktop, Laptop, Tablet, and Mobile
+   ============================================================ */
+
+/* Disable Custom Cursor on Touch & Coarse Pointers */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   TABLETS & MEDIUM SCREENS (max-width: 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .desktop-nav .nav-links {
+    gap: 1.25rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  /* Environment & Creature on Tablet */
+  .creature-interactive-overlay {
+    right: 8%;
+    bottom: 20%;
+    width: 200px;
+    height: 200px;
+    opacity: 0.85;
+  }
+}
+
+/* ============================================================
+   TABLETS & MOBILE PHONES (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  /* Sticky Navigation */
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  /* Environment & Creature on Mobile */
+  .env-state {
+    background-position: 75% center !important;
+  }
+
+  .creature-interactive-overlay {
+    right: 4%;
+    bottom: 10%;
+    width: 140px;
+    height: 140px;
+    opacity: 0.55;
+  }
+
+
+  .env-vignette-overlay {
+    background: radial-gradient(circle at center, rgba(3, 4, 7, 0.45) 0%, rgba(3, 4, 7, 0.94) 75%) !important;
+  }
+
+  /* Intro Experience on Mobile */
+  .intro-bg-image {
+    background-position: center 45%;
+    background-size: cover;
+  }
+
+  .intro-overlay-content {
+    padding: 1.5rem;
+  }
+
+  .intro-name {
+    font-size: 2.5rem;
+    letter-spacing: 0.12em;
+  }
+
+  .intro-role {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+  }
+
+  .intro-tech-metrics {
+    font-size: 0.7rem;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: calc(var(--header-height) + 2.5rem);
+    padding-bottom: 3.5rem;
+    min-height: 90vh;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.98rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+  }
+
+  .hero-quick-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .meta-separator {
+    display: none;
+  }
+
+  /* About Section */
+  .narrative-card {
+    padding: 1.75rem;
+  }
+
+  .lead-text {
+    font-size: 1.15rem;
+  }
+
+  .body-text {
+    font-size: 0.95rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .currently-panel {
+    padding: 1.25rem;
+  }
+
+  /* Skills Section */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card-inner {
+    padding: 1.5rem;
+  }
+
+  /* Experience Timeline */
+  .timeline-track {
+    left: 18px;
+  }
+
+  .timeline-item {
+    gap: 1.25rem;
+    padding-left: 0;
+  }
+
+  .timeline-marker {
+    width: 36px;
+  }
+
+  .marker-date {
+    display: none; /* Displayed inside card for mobile readability */
+  }
+
+  .timeline-content-card {
+    padding: 1.5rem;
+  }
+
+  .role-title {
+    font-size: 1.25rem;
+  }
+
+  /* Education Section */
+  .education-card {
+    padding: 1.75rem;
+  }
+
+  .education-main-info {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .degree-icon-box {
+    width: 56px;
+    height: 56px;
+  }
+
+  .degree-title {
+    font-size: 1.4rem;
+  }
+
+  .institution-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .institution-meta .divider {
+    display: none;
+  }
+
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-inner {
+    padding: 1.5rem;
+  }
+
+  /* Certifications Section */
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    padding: 1.5rem;
+  }
+
+  /* Contact Section */
+  .channel-card,
+  .contact-form {
+    padding: 1.75rem;
+  }
+
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+/* ============================================================
+   EXTRA SMALL DEVICES (max-width: 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+}
